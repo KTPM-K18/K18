@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form-register</title>
+	<link rel="stylesheet" href="./asset/css/dangky.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="overflow"></div>
+		<div class="register-form">	
+		 <div class="register-form__login">
+		 	<div class="register-form__header">
+		 		<h1 class="register-form__header-heading">Đăng Ký</h1>
+		 	</div>
+		 	<div class="register-form__form">
+		 		<div class="register-form__form-group">
+		 			<label>Họ</label>
+		 			<br>
+		 			<input type="text" class="register-form__input" placeholder="VD. Nguyễn ">
+		 		</div>	
+		 		<div class="register-form__form-group">
+		 			<label>Tên</label>
+		 			<br>
+		 			<input type="text" class="register-form__input" placeholder="VD. Anh ">
+		 		</div>	
+		 		<div class="register-form__form-group">
+		 			<label>Email</label>
+		 			<br>
+		 			<input type="email" class="register-form__input" placeholder="Nhập Email  ... ">
+		 		</div>	
+		 		<div class="register-form__form-group">
+		 			<label>Mật khẩu</label>
+		 			<br>
+		 			<input type="password" class="register-form__input pass-key">
+		 			<i class="show far fa-eye"></i>
+		 		</div>
+		 		<div class="register-form__form-group">
+		 			<label>Nhập lại Mật khẩu</label>
+		 			<br>
+		 			<input type="password" class="register-form__input pass1-key">
+		 			<i class="show show1 far fa-eye"></i>
+		    	</div>
+			    	<span class="register-form__policy"> <input type="checkbox" name="#" id="checkbox"> đăng ký để nhận email để nhập các <br> ưu đãi lợi ích dành cho thành viên của bạn </span>
+		 		</div>
+		 		<div class="register-form__btn">
+		 		<button class="register-form__submit"  type="submit">Đăng Ký</button>
+		 	    </div>
+		 	    <span class="auth-form__member">
+		 		Bạn là thành viên? <a href="dangnhap.html" title="" class="auth-form__login">Đăng Nhập</a>
+		 	</span>
+		 	</div>
+		 </div>
+	</div>
+		 	<script>
+        const pass_field = document.querySelector('.pass-key');
+        const showBtn = document.querySelector('.show');
+        showBtn.addEventListener('click', function(){
+        if(pass_field.type === "password"){
+            pass_field.type = "text";
+            // showBtn.textContent = "HIDE";
+            showBtn.style.color = "#3498db";
+        }else{
+            pass_field.type = "password";
+            // showBtn.textContent = "SHOW";
+            showBtn.style.color = "#222";
+        }
+        });
+        const pass_field1 = document.querySelector('.pass1-key');
+        const showBtn1 = document.querySelector('.show1');
+        showBtn1.addEventListener('click', function(){
+        if(pass_field1.type === "password"){
+            pass_field1.type = "text";
+            // showBtn.textContent = "HIDE";
+            showBtn1.style.color = "#3498db";
+        }else{
+            pass_field1.type = "password";
+            // showBtn.textContent = "SHOW";
+            showBtn1.style.color = "#222";
+        }
+        });
+    </script>
+
+   </body>
+</html>
