@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Login</title>
+	<link rel="stylesheet" href="./asset/css/dangnhap.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="overflow"></div>
+		<div class="auth-form">	
+		 <div class="auth-form__login">
+		 	<i class="close fas fa-times"></i>
+		 	<div class="auth-form__header">
+		 		<h1 class="auth-form__header-heading">Đăng Nhập</h1>
+		 	</div>
+		 	<div class="auth-form__form">
+		 		<div class="auth-form__form-group">
+		 			<input type="text" class="auth-form__input" placeholder="Tên đăng nhập ... ">
+		 		</div>	
+		 		<div class="auth-form__form-group">
+		 			<input type="password" class="auth-form__input pass-key" placeholder="Mật khẩu ... ">
+		 			<i class="show far fa-eye"></i>
+		 		</div>
+		 	</div>
+		 	<div class="auth-form__aside">
+			 	<div class="auth-form__aside-aside">
+			 		<div class="auth-form__remember">
+				 		<input type="checkbox" name="#" id="checkbox">
+				 		<span class="auth-form__separate">Nhớ mật khẩu</span>
+				 	</div>
+				 	<div class="auth-form__help">
+				 		 <a href="timemail.html" class="auth-form__help-link">Quên mật khẩu</a>
+				 	</div>
+			 	</div>
+			 	<span class="auth-form__policy">Bạn đồng ý với <a href="#" 
+			 		class="auth-form__policy-link"> chính sách bảo mật</a><br> và <a href="#" 
+			 		class="auth-form__policy-link"> điều khoản sử dụng?</a> </span>
+		 	</div>
+		 	<div class="auth-form__btn">
+		 		<button class="auth-form__submit"  type="submit">Đăng Nhập</button>
+		 	</div>
+		 	<span class="auth-form__member">
+		 		Bạn không phải thành viên? <a href="dangky.html" title="" class="auth-form__register">Đăng Ký</a>
+		 	</span>
+		 </div>
+	</div>
+	</div>
+		
+	</div>
+	<script>
+        const pass_field = document.querySelector('.pass-key');
+        const showBtn = document.querySelector('.show');
+        showBtn.addEventListener('click', function(){
+        if(pass_field.type === "password"){
+            pass_field.type = "text";
+            // showBtn.textContent = "HIDE";
+            showBtn.style.color = "#3498db";
+        }else{
+            pass_field.type = "password";
+            // showBtn.textContent = "SHOW";
+            showBtn.style.color = "#222";
+        }
+        });
+    </script>
+
+</body>
+</html>

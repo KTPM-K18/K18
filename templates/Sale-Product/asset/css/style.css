@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Sale */
+.stand-still {
+    background-color: #fff;
+}
+
+.sale-header {
+    height: 46px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sale-header__sale {
+    margin-right: 5px;
+}
+
+.sale-sort {
+    cursor: pointer;
+}
+
+.sale-header__down {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.sale-product {
+    margin-top: 100px;
+}
+
+.sale-cartegory {
+    height: 510px;
+    overflow-y: auto;
+    position: fixed;
+    left: 65px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.sale-item {
+    margin: 10px 0;
+}
+
+a:hover {
+    color: #9d9d9d;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+.line {
+    width: 95%;
+    height: 1px;
+    background-color: #d9d9d9;
+    margin: 20px 0;
+}
+
+.sale__gender-heading {
+    margin-bottom: 10px;
+}
+
+.sale__gender-item {
+    display: flex;
+    align-items: center;
+    margin: 3px 5px;
+}
+
+.sale__gender-item input {
+    margin-right: 5px;
+}
+
+.product:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    opacity: 0.6;
+}
+
+.product {
+    width: 100%;
+    height: 460px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    margin-top: 12px;
+    transition: all 0.3s;
+}
+
+.product__img {
+    height: 340px;
+}
+
+.product__img a {
+    margin: unset;
+    height: 100%;
+}
+
+.product__img img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product__content {
+    margin: 10px 2px;
+}
+
+.product__title {
+    cursor: pointer;
+}
+
+.product__blurred {
+    display: block;
+    margin: 7px 0;
+    color: #c1c1c1;
+}
+
+.product__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__price-old {
+    text-decoration: line-through;
+    color: #757575;
+}
+
+/* Top product selling */
+.top-title {
+    margin-top: 80px;
+}
+
+.top-title__heading, .top-title__amount {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.top-product__header {
+    justify-content: flex-end;
+}
