@@ -119,6 +119,7 @@ html{
     float: left;
     width: 20%;
     text-align: center;
+    cursor: pointer;
 }
 #footer {
     background-color: #000;
