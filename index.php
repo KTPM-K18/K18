@@ -1,2 +1,4 @@
 <?php
-require "templates/Home/index.html";
+
+require "templates\customer\page\home.html";
+?>
