@@ -63,13 +63,21 @@ html{
     float: right;
     padding: 0 30px;
 }
+
 #header .search-btn:hover {
     cursor: pointer;
 }
 #header .search-btn > input {
     float: left;
-    line-height: 20px;
-    margin: 11px 11px 0 0;
+    height: 30px;
+    margin: 8px 11px 0 0;
+    outline: none;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 #header .search-icon {
     color: #fff;
@@ -93,7 +101,6 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 59%;
-    background: url('/assets/img/slider/silder3.jpg') top center / cover no-repeat;
 }
 #slider .text-content {
     position: absolute;
