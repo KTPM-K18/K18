@@ -136,6 +136,7 @@ html{
 }
 #footer {
     background-color: #000;
+    position: relative;
 }
 #footer .contact {
     width: 100%;

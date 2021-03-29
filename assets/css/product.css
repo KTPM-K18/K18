@@ -8,6 +8,7 @@
 /* Sale */
 .stand-still {
     background-color: #fff;
+    margin-top: 55px;
 }
 
 .sale-header {
@@ -28,10 +29,6 @@
 .sale-header__down {
     margin-left: 5px;
     font-size: 16px;
-}
-
-.sale-product {
-    margin-top: 100px;
 }
 
 .sale-cartegory {
