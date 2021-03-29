@@ -13,6 +13,13 @@ require_once "./views/CustomerView.php";
 			$this->view = new CustomerView();
 			$this->model = new CustomerModel();
 		}
+
+		public function showCarts(){
+			$this->view->showViewCarts();
+		}
+		public function showInfor(){
+			$this->view->showViewInfor();
+		}
 	}
 
  ?>
