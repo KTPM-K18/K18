@@ -62,8 +62,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <a href="?controller=&task=showHome" class="exit"><i class="fas fa-arrow-left"></i>Quay lại</a>
-        <a href="?controller=customer&task=login" class="login">Đăng nhập</a>
+        <a href="?controller=NonCustomer&task=register" class="exit"><i class="fas fa-arrow-left"></i>Quay lại</a>
+        <a href="?controller=NonCustomer&task=login" class="login">Đăng nhập</a>
         <?php
         if($notify == "success") {
             echo "<span class='success'>Thành công</span>";
