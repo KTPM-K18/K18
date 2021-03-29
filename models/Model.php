@@ -3,7 +3,7 @@
 const HOST = "localhost";
 const USER = "root";
 const PASS = "";
-const DATABASE = "K18_Shop";
+const DATABASE = "shopweb";
 
 class Model{
     protected $conn;

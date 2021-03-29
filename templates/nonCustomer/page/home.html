@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Shoes-Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons/themify-icons.css">
+</head>
+
+<body>
+<div id="main">
+    <?php include "templates/nonCustomer/partials/header.html";?>
+
+    <div id="slider" style="background: url('assets/img/slider/silder3.jpg') top center / cover no-repeat;">
+        <div class="text-content">
+            <h2 class="text-heading">Jordan Ma2</h2>
+            <div class="text-description">Step into air.</div>
+        </div>
+    </div>
+
+    <div id="content">
+        <h1><a href="?controller=NonCustomer&task=showTopProducts">Top bán chạy</a></h1>
+        <div class="best-selling-list">
+            <!--Xu ly back end-->
+            <div class="product-item">
+                <a href="?controller=NonCustomer&task=showProductDetail" target="_self">
+                <img src="assets/img/jordan_ma2.jpg" alt="Jordan Ma2">
+                <p class="product-name">Jordan Ma2</p></a>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        <div class="contact">
+            <p>Shoes Shop</p>
+            <div class="adress">
+                <i class="adr1 ti-location-pin"></i>
+                Đường Z115, Xã Quyết Thắng, Thành phố Thái Nguyên
+                <br>
+                <i class="adr2 ti-mobile"></i>
+                Phone: 0123456789
+                <br>
+                <i class="adr3 ti-email"></i>
+                Email: shoesshop@gmail.com
+                <br>
+                <i class="adr4 ti-facebook"></i>
+                Fb: facebook.com/shoes_shop
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
