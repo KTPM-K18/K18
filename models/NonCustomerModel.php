@@ -46,16 +46,16 @@
                     if($_POST['password'] != $_POST['retype_password']) {
                         $this->check = "Password mismatch";
                     }
-                    else $this->password = $_POST['password'];
+                    $this->password = $_POST['password'];
                 }
 
                 // Lưu vào database
                 if(!empty($this->full_name) && !empty($this->user_name) && !empty($this->password)) {
-                    $query = "insert into users (full_name, user_name, password)
+                    $query = "insert into users (fullname, username, password)
                                 values ('".$this->full_name."', '".$this->user_name."', '".$this->password."')";
                     return $this->conn->query($query);
                 }
-                else return false;
+                return false;
             }
 		}
 
@@ -77,7 +77,7 @@
 
             // Lấy giữ liệu trên database
             if (!empty($this->user_name) && !empty($this->password)) {
-                $query = "select * from users where user_name = '".$this->user_name."' and password = '".$this->password."'";
+                $query = "select * from users where username = '".$this->user_name."' and password = '".$this->password."'";
                 $result = $this->conn->query($query);
                 if($result->num_rows > 0) {
                     $data = [];
@@ -86,7 +86,8 @@
                     }
                     return $data;
                 }
-            } else return 0;
+            }
+            return 0;
         }
     }
  ?>

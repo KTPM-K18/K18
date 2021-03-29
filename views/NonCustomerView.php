@@ -12,7 +12,7 @@ require_once "View.php";
 
         public function notification($notify)
         {
-            require_once("./templates/partials/notify/notify_account.php");
+            require_once("./templates/$this->url/partials/notify/notify_account.php");
         }
 
         public function formLogin()

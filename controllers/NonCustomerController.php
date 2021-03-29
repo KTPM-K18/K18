@@ -23,9 +23,9 @@ class NonCustomerController extends Controller{
 	public function saveAccount() {
 		$result = $this->model->saveAccount();
 		if ($result == true) {
-			header("Location: ?controller=customer&task=notification&notify=success");
+			header("Location: ?controller=NonCustomer&task=notification&notify=success");
         } else {
-		    header("Location: ?controller=customer&task=notification&notify=fail");
+		    header("Location: ?controller=NonCustomer&task=notification&notify=fail");
         }
 	}
 
