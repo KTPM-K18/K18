@@ -7,9 +7,9 @@ class ProductView extends View{
     function __construct(){
         $this->url = 'product';
     }
-    
-    function showViewManage($data){
-        include "./templates/$this->url/page/manage.html";
+
+    public function showViewManage($data){
+        include "./templates/$this->url/page/home.html";
     }
 
     function showViewUpdate($data){

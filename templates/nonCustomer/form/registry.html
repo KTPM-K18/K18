@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="overflow"></div>
 		<div class="register-form">	
-			<form class="register-form__login" action="?controller=NonCustomer&task=saveAccount" method="POST">
+			<form class="register-form__login" action="?task=saveAccount" method="POST">
 			 	<div class="register-form__header">
 			 		<h1 class="register-form__header-heading">Đăng Ký</h1>
 			 	</div>
@@ -27,9 +27,9 @@
 			 			<input type="text" id="fname" name="fname" class="register-form__input" placeholder="VD. Anh ">
 			 		</div>	
 			 		<div class="register-form__form-group">
-			 			<label for="user_name">Tên Đăng Nhập</label>
+			 			<label for="username">Tên Đăng Nhập</label>
 			 			<br>
-			 			<input type="email" id="user_name" name="user_name" class="register-form__input" placeholder="Nhập email / Số điện thoại">
+			 			<input type="email" id="username" name="username" class="register-form__input" placeholder="Nhập email / Số điện thoại">
 			 		</div>	
 			 		<div class="register-form__form-group">
 			 			<label for="password">Mật khẩu</label>
@@ -49,7 +49,7 @@
 			 		<button class="register-form__submit"  type="submit">Đăng Ký</button>
 			 	</div>
 		 	    <span class="auth-form__member">
-		 			Bạn là thành viên? <a href="?controller=NonCustomer&task=login" title="" class="auth-form__login">Đăng Nhập</a>
+		 			Bạn là thành viên? <a href="?task=login" title="" class="auth-form__login">Đăng Nhập</a>
 		 		</span>
 		 	</form>
 		</div>

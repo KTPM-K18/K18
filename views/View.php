@@ -8,7 +8,7 @@ class View{
         include "./templates/$this->url/page/home.html";
     }
 
-    public function showViewProducts(){
+    public function showViewProducts($data){
         include "./templates/$this->url/page/products.html";
     }
 
@@ -20,7 +20,7 @@ class View{
         include "./templates/$this->url/page/sale.html";
     }
 
-    public function showViewProductDetail(){
+    public function showViewProductDetail($data){
         include "./templates/$this->url/page/product_detail.html";
     }
 }

@@ -20,8 +20,10 @@
                     <th class="mt-50">Tên Sản phẩm</th>
                     <th class="mt-10">Màu</th>
                     <th class="mt-10">Size</th>
-                    <th class="mt-10" >Số lượng</th>
+                    <th class="mt-10">Số lượng</th>
                     <th class="mt-10">Đơn giá</th>
+                    <th class="mt-10">Sale</th>
+                    <th class="mt-10">Số lượng đã bán</th>
                     <th class="mt-10">Thao tác</th>
                 </tr>
             </thead>
@@ -46,17 +48,19 @@
                         <td><?php echo $value['size']?></td>
                         <td><?php echo $value['amount']?></td>
                         <td data-th="" class="text-center"><?php echo $value['price']?></td>
+                        <td><?php echo $value['sale']?></td>
+                        <td><?php echo $value['purchase']?></td>
                         <td class="" data-th="">
-                            <a class="icon-refesh" href="?controller=Product&task=showUpdate&id=<?php echo $value['id_products']?>"><i class="fas fa-sync-alt"></i></a>
-                            <a class="icon-del" href="?controller=Product&task=delete&id=<?php echo $value['id_products']?>"><i class="fas fa-trash-alt"></i></a>						
+                            <a class="icon-refesh" href="?task=showUpdate&id=<?php echo $value['id_products']?>"><i class="fas fa-sync-alt"></i></a>
+                            <a class="icon-del" href="?task=delete&id=<?php echo $value['id_products']?>"><i class="fas fa-trash-alt"></i></a>						
                         </td>
                         </tr>
                         <?php endforeach;?>
         </tbody>
     
-
+        <!--Đọc rồi làm fontend cho tao-->
     <tfoot class="foot">
-        <form action='?controller=Product&task=insert' method="POST">
+        <form action='?task=insert' method="POST">
         <tr >
             <td>
                 <input name='img' size="5" type="file">
@@ -75,6 +79,12 @@
             </td>
             <td>
                 <input name='price' size="15" type="number">
+            </td>
+            <td>
+                <input name='sale' size="15" type="number">
+            </td>
+            <td>
+                <input name='purchase' size="15" type="number">
             </td>
             <td>
                 <input type="submit" value="insert">

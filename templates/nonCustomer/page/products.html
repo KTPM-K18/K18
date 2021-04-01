@@ -28,262 +28,27 @@
                 </div>
             </div>
 			<div class="row">
+                <?php foreach ($data as $value):?>
                 <div class="col-3">
                     <div class="product">
                         <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
+                            <a href="?task=showProductsDetail&id=<?php echo $value['id_products']?>">
+                                <img src="assets/img/products/<?php echo $value['img']?>" alt="" title="">
+                            </a>
                         </div>
                         <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
+                            <p class="product__title"></p>
+                            <span class="product__blurred"><?php echo $value['name']?></span>
+                            <span class="product__blurred">Size: <?php echo $value['color']?></span>
+                            <span class="product__blurred">Color: <?php echo $value['size']?></span>
                             <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
+                                <span class="product__price-new"><?php echo $value['sale']?></span>
+                                <span class="product__price-old"><?php echo $value['price']?></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="product">
-                        <div class="product__img">
-                            <a href="#"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c0238e2c-1692-4a9c-a546-3dca529b8bcd/air-zoom-bb-nxt-basketball-shoe-wRmJMz.jpg" alt="Nike Air Zoom BB NXT" title="Nike Air Zoom BB NXT"></a>
-                        </div>
-                        <div class="product__content">
-                            <p class="product__title">Nike Air Zoom BB NXT</p>
-                            <span class="product__blurred">Basketball Shoe</span>
-                            <span class="product__blurred">1 Colour</span>
-                            <div class="product__price">
-                                <span class="product__price-new">3.698.000 ₫</span>
-                                <span class="product__price-old">5.279.000 ₫</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach;?>
 			</div>
 		</div> <!-- End product sale -->
 

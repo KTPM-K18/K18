@@ -62,7 +62,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <a href="?task=login" class="exit"><i class="fas fa-arrow-left"></i>Quay lại</a>
+        <a href="?task=showHome" class="exit"><i class="fas fa-arrow-left"></i>Quay lại</a>
         <?php
         if($notify == "success") {
             echo "<span class='success'>Thành công</span>";

@@ -33,10 +33,10 @@
                 }
 
 			    // Lấy dữ liệu của form cho thằng user name
-                if (empty($_POST['user_name'])) {    // ô user name trống
+                if (empty($_POST['username'])) {    // ô user name trống
                     $this->user_name_err = "User name is required!";
                 } else {
-                    $this->user_name = $_POST['user_name'];
+                    $this->user_name = $_POST['username'];
                 }
 
                 // Lấy dữ liệu của form cho thằng password
@@ -48,7 +48,7 @@
                     }
                     $this->password = $_POST['password'];
                 }
-
+                //Kiểm tra có trùng username không?
                 // Lưu vào database
                 if(!empty($this->full_name) && !empty($this->user_name) && !empty($this->password)) {
                     $query = "insert into users (fullname, username, password)
@@ -62,10 +62,10 @@
         public function getAccount()
         {
             if ($_SERVER['REQUEST_METHOD'] == "POST") {
-                if (empty($_POST['user_name'])) {
+                if (empty($_POST['username'])) {
                     $this->user_name_err = "User name is required!";
                 } else {
-                    $this->user_name = $_POST['user_name'];
+                    $this->user_name = $_POST['username'];
                 }
 
                 if (empty($_POST['password'])) {

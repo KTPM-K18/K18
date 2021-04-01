@@ -10,8 +10,8 @@ class ProductModel{
         $this->product = new Product();
     }
 
-    function insertProduct($name, $color, $size, $amount, $price, $img){
-        return $this->product->insertProduct($name, $color, $size, $amount, $price, $img);
+    function insertProduct($name, $color, $size, $amount, $price, $img, $sale, $purchase){
+        return $this->product->insertProduct($name, $color, $size, $amount, $price, $img, $sale, $purchase);
     }
 
     function selectProduct(){
@@ -26,7 +26,7 @@ class ProductModel{
         return $this->product->deleteProduct($id);
     }
 
-    function updateProduct($id,$name,$color,$size,$amount,$price,$img){
-        return $this->product->updateProduct($id,$name,$color,$size,$amount,$price,$img);
+    function updateProduct($id,$name,$color,$size,$amount,$price,$img, $sale, $purchase){
+        return $this->product->updateProduct($id,$name,$color,$size,$amount,$price,$img, $sale, $purchase);
     }
 }
