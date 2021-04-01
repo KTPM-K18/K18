@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Shoes-Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+<div id="main">
+    <?php include "templates/product/partials/header.html";?>
+    <div class="main">
+        <table class="table">
+            <thead class="head">
+                <tr>
+                    <th class="mt-50">Tên Sản phẩm</th>
+                    <th class="mt-10">Màu</th>
+                    <th class="mt-10">Size</th>
+                    <th class="mt-10" >Số lượng</th>
+                    <th class="mt-10">Đơn giá</th>
+                    <th class="mt-10">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="content">
+                        <td>
+                            <div class="row">
+                                <div class="col-sm-2 hidden-xs">
+                                    <img src="assets/img/Product-detail__img/shoe_1.jpg" alt="" class="shoes">
+                                    <hr>
+                                </div>
+                                <div class="col-sm-10">
+                                    <h4 class="nomargin">Sản phẩm</h4>
+                                    <p>Giày cầu lông - giày bóng chuyền nam nữ Promax </p>
+                                </div>
+                            </div> 
+                        </td>
+
+                            
+                        <td >vang</td>
+                        <td>XL</td>
+                        <td>10</td>
+                            <td data-th="" class="text-center">300.000VND</td>
+                            <td class="" data-th="">
+                                <button class="icon-refesh"><i class="fas fa-sync-alt"></i></button>
+                                <button class="icon-del"><i class="fas fa-trash-alt"></i></button>								
+                            </td>
+                        </tr>
+        </tbody>
+    
+
+    <tfoot class="foot">
+        <tr >
+            <td>
+                <input name='name' size="15">
+            </td>
+            <td>
+                <input name='name' size="15">
+            </td>
+            <td>
+                <input name='name' size="15">
+            </td>
+            <td class="text-center">  
+                <input name='name' size="15">
+            </td>
+            <td>
+                <input name='name' size="15">
+            </td>
+            <td>
+                <a>INSERT</a>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+</div>
+    
+
+    </div>
+</div>
+</body>
+</html>

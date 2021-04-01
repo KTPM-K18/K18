@@ -63,6 +63,10 @@ html{
     float: right;
     padding: 0 30px;
 }
+#header .search-btn1 {
+    float: right;
+    padding: 0 30px;
+}
 
 #header .search-btn:hover {
     cursor: pointer;
