@@ -6,9 +6,9 @@ class Product extends Model{
     var $id = 'id_products';
 
     
-    function insertProduct($name, $color, $size, $amount, $price, $img){
-        $field = "`id_products`, `name`, `color` , `size`, `amount`, `price`, `img`";
-        $value = "NULL,'$name','$color','$size','$amount','$price','$img'";
+    function insertProduct($name, $color, $size, $amount, $price, $img, $sale, $purchase){
+        $field = "`id_products`, `name`, `color` , `size`, `amount`, `price`, `img`, `sale`, `purchase`";
+        $value = "NULL,'$name','$color','$size','$amount','$price','$img', '$sale', '$purchase'";
         echo "$value";
         return $this->insert($this->table, $field, $value);
     }
@@ -25,8 +25,8 @@ class Product extends Model{
         return $this->delete($this->table, "$this->id = $id");
     }
 
-    function updateProduct($id,$name,$color,$size,$amount,$price,$img){
-        $value = " name='$name', color='$color', size='$size', amount='$amount', price='$price', img='$img'";
+    function updateProduct($id,$name,$color,$size,$amount,$price,$img,$sale,$purchase){
+        $value = " name='$name', color='$color', size='$size', amount='$amount', price='$price', img='$img', sale='$sale', purchase='$purchase'";
         return $this->update($this->table, $value, "$this->id=$id");
     }
 }

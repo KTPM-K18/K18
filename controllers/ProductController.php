@@ -13,7 +13,7 @@ class ProductController{
         $this->view = new ProductView();
     }
 
-    public function showManage(){
+    public function showHome(){
         $data = $this->model->selectProduct();
         $this->view->showViewManage($data);
     }
@@ -31,10 +31,12 @@ class ProductController{
         $amount = $_POST['amount'];
         $price = $_POST['price'];
         $img = $_POST['img'];
+        $sale = $_POST['sale'];
+        $purchase = $_POST['purchase'];
 
-        $result = $this->model->insertProduct($name, $color, $size, $amount, $price, $img);
+        $result = $this->model->insertProduct($name, $color, $size, $amount, $price, $img, $sale, $purchase);
         if($result){
-            header('location:?controller=Product&task=showManage');
+            header('location:?task=showHome');
         }else{
             echo "That bai!";
         }
@@ -45,7 +47,7 @@ class ProductController{
         var_dump($id);
         $result = $this->model->deleteProduct($id);
         if($result){
-            header('location:?controller=Product&task=showManage');
+            header('location:?task=showHome');
         }else{
             echo "That bai!";
         }
@@ -59,12 +61,20 @@ class ProductController{
         $amount = $_POST['amount'];
         $price = $_POST['price'];
         $img = $_POST['img'];
+        $sale = $_POST['sale'];
+        $purchase = $_POST['purchase'];
 
-        $result = $this->model->updateProduct($id,$name,$color,$size,$amount,$price, $img);
+        $result = $this->model->updateProduct($id,$name,$color,$size,$amount,$price, $img, $sale, $purchase);
         if($result){
-            header('location:?controller=Product&task=showManage');
+            header('location:?task=showHome');
         }else{
             echo "That bai!";
         }
+    }
+
+    public function logOut(){
+        setcookie("id", $_COOKIE['id'],time()-3600,"/");
+        setcookie("admin", $_COOKIE['admin'] ,time()-3600,"/");
+        header("Location: ?task=showHome");
     }
 }

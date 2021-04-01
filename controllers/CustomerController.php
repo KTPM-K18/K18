@@ -20,6 +20,18 @@ require_once "./views/CustomerView.php";
 		public function showInfor(){
 			$this->view->showViewInfor();
 		}
+
+		public function notification() {
+			$notify = $_REQUEST['notify'];
+			$this->view->notification($notify);
+		}
+
+
+		public function logOut(){
+			setcookie("id", $_COOKIE['id'],time()-3600,"/");
+			setcookie("admin", $_COOKIE['admin'] ,time()-3600,"/");
+			header("Location: ?task=showHome");
+		}
 	}
 
  ?>

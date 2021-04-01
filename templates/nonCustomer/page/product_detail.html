@@ -5,42 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/product_detail.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
+    <?php include "templates/nonCustomer/partials/header.html";?>
+    <?php foreach ($data as $value):?>
     <div class="card-wrapper">
         <div class="card">
             <!-- Card left -->
                 <div class="product-imgs">
                     <div class="img-display">
                         <div class="img-showcase">
-                            <img src="assets/img/Product-detail__img/shoe_1.jpg" alt="">
-                            <img src="assets/img/Product-detail__img/shoe_2.jpg" alt="">
-                            <img src="assets/img/Product-detail__img/shoe_3.jpg" alt="">
-                            <img src="assets/img/Product-detail__img/shoe_4.jpg" alt="">
+                            <img src="assets/img/products/<?php echo $value['img']?>" alt="">
                         </div>
                     </div>
                     <!-- Small photo -->
                     <div class="img-select">
                         <div class="img-item">
                             <a href="assets/img/Product-detail__img/shoe_1.jpg" data-id="1">
-                                <img src="assets/img/Product-detail__img/shoe_1.jpg" alt="shoe img">
+                                
                             </a>
                         </div>
                         <div class="img-item">
                             <a href="assets/img/Product-detail__img/shoe_2.jpg" data-id="2">
-                                <img src="assets/img/Product-detail__img/shoe_2.jpg" alt="shoe img">
+                                
                             </a>
                         </div>
                         <div class="img-item">
                             <a href="assets/img/Product-detail__img/shoe_3.jpg" data-id="3">
-                                <img src="assets/img/Product-detail__img/shoe_3.jpg" alt="shoe img">
+                                
                             </a>
                         </div>
                         <div class="img-item">
                             <a href="assets/img/Product-detail__img/shoe_4.jpg" data-id="4">
-                                <img src="assets/img/Product-detail__img/shoe_4.jpg" alt="shoe img">
+                                
                             </a>
                         </div>
                     </div>
@@ -49,8 +52,8 @@
             <!-- Card right -->
             <div class="product-content">
 
-                <h2 class="product-title">Nike Shoes</h2>
-                <a href="#" class="product-link">Visit Nike Store</a>
+                <h2 class="product-title"><?php echo $value['name']?></h2>
+                <a href="#" class="product-link">Visit Shoes Store</a>
                 <div class="product-rating">
                     <div class="fas fa-star"></div>
                     <div class="fas fa-star"></div>
@@ -62,8 +65,8 @@
 
                 <!-- Price -->
                 <div class="product-price">
-                    <p class="last-price">Giá cũ: <span>$250</span></p>
-                    <p class="new-price">Giá mới: <span>$200</span></p>
+                    <p class="last-price">Giá cũ: <span><?php echo $value['price']?></span></p>
+                    <p class="new-price">Giá mới: <span><?php echo $value['price']?></span></p>
                 </div>
 
                 <div class="product-detail">
@@ -81,8 +84,11 @@
                     </p>
 
                     <ul>
-                        <li>Màu sắc: <span>Đen</span></li>
-                        <li>Có sẵn: <span>Trong kho</span></li>
+                        <li>Màu sắc: <span><?php echo $value['color']?></span></li>
+                        <li>Có sẵn: <span><?php if($value['amount']>0) {
+                            echo 'Trong kho';} else{
+                                echo 'Đã hết';
+                            } ?></span></li>
                         <li>Loại: <span>Giày thể thao</span></li>
                         <li>Ship: <span>Miễn phí</span></li>
                     </ul>
@@ -116,7 +122,7 @@
                     <a href="#">
                         <i class="fab fa-pinterest"></i>
                     </a>
-                    
+                    <?php endforeach;?>
                 </div>
             </div>
         </div>

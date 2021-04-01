@@ -11,14 +11,14 @@
 	<div class="container">
 		<div class="overflow"></div>
 		<div class="auth-form">
-			 <form class="auth-form__login" action="?controller=NonCustomer&task=getAccount" method="POST">
-				<a href="?controller=NonCustomer&task=showHome"><i class="close fas fa-times"></i></a>
+			 <form class="auth-form__login" action="?task=getAccount" method="POST">
+				<a href="?task=showHome"><i class="close fas fa-times"></i></a>
 				<div class="auth-form__header">
 					<h1 class="auth-form__header-heading">Đăng Nhập</h1>
 				</div>
 				<div class="auth-form__form">
 					<div class="auth-form__form-group">
-						<input type="text"  name="user_name" class="auth-form__input" placeholder="Tên đăng nhập ... ">
+						<input type="text"  name="username" class="auth-form__input" placeholder="Tên đăng nhập ... ">
 					</div>
 					<div class="auth-form__form-group">
 						<input type="password" name="password" class="auth-form__input pass-key" placeholder="Mật khẩu ... ">
@@ -32,7 +32,7 @@
 							<span class="auth-form__separate">Nhớ mật khẩu</span>
 						</div>
 						<div class="auth-form__help">
-							 <a href="?controller=NonCustomer&task=forgotPassword" class="auth-form__help-link">Quên mật khẩu</a>
+							 <a href="?task=forgotPassword" class="auth-form__help-link">Quên mật khẩu</a>
 						</div>
 					</div>
 					<span class="auth-form__policy">Bạn đồng ý với
@@ -44,7 +44,7 @@
 					<button class="auth-form__submit"  type="submit">Đăng Nhập</button>
 				</div>
 				<span class="auth-form__member">
-					Bạn không phải thành viên? <a href="?controller=NonCustomer&task=register" title="" class="auth-form__register">Đăng Ký</a>
+					Bạn không phải thành viên? <a href="?task=register" title="" class="auth-form__register">Đăng Ký</a>
 				</span>
 			 </form>
 		</div>
