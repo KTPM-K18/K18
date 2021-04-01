@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5f30d95-9712-4d77-80f3-688d26b89965" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/subpage/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/subpage/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/CustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/NonCustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/NonCustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/CustomerModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/CustomerModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/NonCustomerModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/NonCustomerModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/customer/page/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customer/page/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/customer/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customer/partials/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nonCustomer/form/forgotPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nonCustomer/form/forgotPassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/CustomerView.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/CustomerView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/NonCustomerView.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/NonCustomerView.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1qLQ4EKHIlwj9PPDBC4CxHzmQ02" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PHP/Bài Test/Test MySQL/login_exaclty.php" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5f30d95-9712-4d77-80f3-688d26b89965" name="Default Changelist" comment="" />
+      <created>1616856209805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616856209805</updated>
+      <workItem from="1616856254540" duration="12790000" />
+      <workItem from="1616920662695" duration="5204000" />
+      <workItem from="1616934621671" duration="4268000" />
+      <workItem from="1616999701023" duration="10608000" />
+      <workItem from="1617049022995" duration="12510000" />
+      <workItem from="1617270114399" duration="1628000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
