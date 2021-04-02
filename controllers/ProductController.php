@@ -24,6 +24,10 @@ class ProductController{
         $this->view->showViewUpdate($data);
     }
 
+    public function insertProduct() {
+        $this->view->insertProduct();
+    }
+
     public function insert(){
         $name = $_POST['name'];
         $color = $_POST['color'];

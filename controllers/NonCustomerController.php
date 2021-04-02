@@ -39,8 +39,8 @@ class NonCustomerController extends Controller{
     public function getAccount() {
 		$data = $this->model->getAccount();
 		if ($data != NULL && count($data) > 0) {
-			setcookie("id", $data[0]['id_users'],time()+3600,"/");
-			setcookie("admin", $data[0]['admin'],time()+3600,"/");
+            setcookie("id", $data[0]['id_users'], time() + 3600, "/");
+            setcookie("admin", $data[0]['admin'], time() + 3600, "/");
 		    if($_COOKIE['admin'] != 1){
 				header("Location: ?task=showHome");
 			}else{
@@ -53,5 +53,24 @@ class NonCustomerController extends Controller{
 
     public function forgotPassword() {
 		$this->view->formForgotPassword();
+    }
+
+    public function checkEmail() {
+	    $data = $this->model->checkEmail();
+	    if($data != NULL && count($data) > 0) {
+            $this->view->enterNewPassword($data);
+        } else {
+            header("Location: ?task=notification&notify=fail");
+        }
+    }
+
+    public function saveNewPassword() {
+	    $id = $_REQUEST['id'];
+	    $result = $this->model->saveNewPassword($id);
+        if($result){
+            header('location:?task=login');
+        } else{
+            header("Location: ?task=notification&notify=fail");
+        }
     }
 }

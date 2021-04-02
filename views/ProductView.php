@@ -15,4 +15,9 @@ class ProductView extends View{
     function showViewUpdate($data){
         include "./templates/$this->url/form/update.html";
     }
+
+    public function insertProduct()
+    {
+        require_once ("./templates/$this->url/form/insert.html");
+    }
 }

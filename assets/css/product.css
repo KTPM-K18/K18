@@ -119,7 +119,7 @@ a {
     display: block;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .product__content {
@@ -133,7 +133,7 @@ a {
 .product__blurred {
     display: block;
     margin: 7px 0;
-    color: #c1c1c1;
+    color: #757575;
 }
 
 .product__price {

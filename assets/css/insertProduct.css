@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    background: #fff;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    background-color: #333;
+
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-y: scroll;
+}
+
+.overflow {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.register-form {
+    position: relative;
+    min-width: 500px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.register-form__insert {
+    border-radius: 5px;
+    padding: 10px 50px 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.register-form__header {
+    padding: 20px 0px;
+}
+
+.register-form__form
+{
+    width: 100%;
+}
+
+.register-form__header-heading {
+    text-align: center;
+}
+
+.register-form__form-group{
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+.register-form__input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 15px;
+    font-size: 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #8d8d8d;
+}
+
+#img {
+    font-size: 18px;
+    color: #f04444;
+}
+
+.register-form__btn {
+    margin-top: 20px;
+}
+
+.register-form__submit:hover{
+    background-color: #333;
+    transition: all 0.2s;
+}
+
+.register-form__submit{
+    width: 100%;
+    height: 40px;
+    background-color: #111;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-form__member
+{   display: block;
+    color: #8d8d8d;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.auth-form__login:hover {
+    color: red;
+}
+
+.auth-form__login
+{
+    font-size: 18px;
+    color: #676767;
+}

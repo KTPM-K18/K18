@@ -6,96 +6,59 @@
     <title>Shoes-Shop</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        th, td {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 <div id="main">
     <?php include "templates/product/partials/header.html";?>
-    <div class="main">
-        <table class="table">
-            <thead class="head">
+    <div class="main" style="margin-top: 45px">
+        <table class="table table-hover">
+            <thead class="table-primary">
                 <tr>
-                    <th class="mt-50">Tên Sản phẩm</th>
-                    <th class="mt-10">Màu</th>
-                    <th class="mt-10">Size</th>
-                    <th class="mt-10">Số lượng</th>
-                    <th class="mt-10">Đơn giá</th>
-                    <th class="mt-10">Sale</th>
-                    <th class="mt-10">Số lượng đã bán</th>
-                    <th class="mt-10">Thao tác</th>
+                    <th>Tên Sản phẩm</th>
+                    <th>Màu</th>
+                    <th>Size</th>
+                    <th>Số lượng</th>
+                    <th>Đơn giá</th>
+                    <th>Sale</th>
+                    <th>Số lượng đã bán</th>
+                    <th>Thao tác</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if($data!=NULL) foreach ($data as $value) :?>
-                <tr class="content">
-                        <td>
-                            <div class="row">
-                                <div class="col-sm-2 hidden-xs">
-                                    <img src="assets/img/products/<?php echo $value['img']?>" alt="" class="shoes">
-                                    <hr>
-                                </div>
-                                <div class="col-sm-10">
-                                    <h4 class="nomargin">Sản phẩm</h4>
-                                    <p><?php echo $value['name']?></p>
-                                </div>
-                            </div> 
-                        </td>
+            <?php if($data!=NULL) foreach ($data as $value) :?>
+            <tr>
+                <td style="text-align: unset">
+                    <div>
+                        <div>
+                            <img src="assets/img/products/<?php echo $value['img']?>" alt="" width="70px" height="60px" style="object-fit: contain">
+                            <span style="display: inline-block; width: 300px; overflow: hidden"><?php echo $value['name']?></span>
+                        </div>
+                    </div>
+                </td>
 
-                            
-                        <td><?php echo $value['color']?></td>
-                        <td><?php echo $value['size']?></td>
-                        <td><?php echo $value['amount']?></td>
-                        <td data-th="" class="text-center"><?php echo $value['price']?></td>
-                        <td><?php echo $value['sale']?></td>
-                        <td><?php echo $value['purchase']?></td>
-                        <td class="" data-th="">
-                            <a class="icon-refesh" href="?task=showUpdate&id=<?php echo $value['id_products']?>"><i class="fas fa-sync-alt"></i></a>
-                            <a class="icon-del" href="?task=delete&id=<?php echo $value['id_products']?>"><i class="fas fa-trash-alt"></i></a>						
-                        </td>
-                        </tr>
-                        <?php endforeach;?>
-        </tbody>
-    
-        <!--Đọc rồi làm fontend cho tao-->
-    <tfoot class="foot">
-        <form action='?task=insert' method="POST">
-        <tr >
-            <td>
-                <input name='img' size="5" type="file">
-            </td>
-            <td>
-                <input name='name' size="15" type="text">
-            </td>
-            <td>
-                <input name='color' size="15" type="text">
-            </td>
-            <td>
-                <input name='size' type="text" size="15">
-            </td>
-            <td class="text-center">  
-                <input name='amount' size="15" type="text">
-            </td>
-            <td>
-                <input name='price' size="15" type="number">
-            </td>
-            <td>
-                <input name='sale' size="15" type="number">
-            </td>
-            <td>
-                <input name='purchase' size="15" type="number">
-            </td>
-            <td>
-                <input type="submit" value="insert">
-            </td>
-        </tr>
-    </form>
-    </tfoot>
-</table>
-</div>
-    
 
+                <td><?php echo $value['color']?></td>
+                <td><?php echo $value['size']?></td>
+                <td><?php echo $value['amount']?></td>
+                <td data-th="" ><?php echo $value['price']?></td>
+                <td><?php echo $value['sale']?></td>
+                <td><?php echo $value['purchase']?></td>
+                <td data-th="" style="display: flex; justify-content: space-around">
+                    <a href="?task=showUpdate&id=<?php echo $value['id_products']?>"><i class="fas fa-sync-alt"></i></a>
+                    <a href="?task=delete&id=<?php echo $value['id_products']?>"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+            <?php endforeach;?>
+            </tbody>
+        </table>
     </div>
 </div>
 </body>

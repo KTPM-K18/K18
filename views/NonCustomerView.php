@@ -24,6 +24,11 @@ require_once "View.php";
         {
             require_once("./templates/$this->url/form/forgotPassword.html");
         }
+
+        public function enterNewPassword($data)
+        {
+            require_once("./templates/$this->url/form/newPassword.html");
+        }
     }
 
  ?>

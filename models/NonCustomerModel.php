@@ -3,13 +3,14 @@
     require_once "Model.php";
 	class NonCustomerModel extends Model
 	{
-	    private $full_name;
-	    private $user_name;
-	    private $password;
-	    private $full_name_err;
-	    private $user_name_err;
-	    private $password_err;
-	    private $check;
+	    protected $full_name;
+        protected $user_name;
+        protected $password;
+        protected $full_name_err;
+        protected $user_name_err;
+        protected $password_err;
+        protected $check;
+        var $id = 'id_users';
 		
 		public function __construct()
 		{
@@ -29,7 +30,7 @@
 			            $this->full_name_err = "First name is required!";
                     }
                 } else {
-                    $this->full_name = $_POST['lname'] . $_POST['fname'];
+                    $this->full_name = $_POST['lname'] . " " . $_POST['fname'];
                 }
 
 			    // Lấy dữ liệu của form cho thằng user name
@@ -46,7 +47,7 @@
                     if($_POST['password'] != $_POST['retype_password']) {
                         $this->check = "Password mismatch";
                     }
-                    $this->password = $_POST['password'];
+                    else $this->password = $_POST['password'];
                 }
                 //Kiểm tra có trùng username không?
                 // Lưu vào database
@@ -88,6 +89,44 @@
                 }
             }
             return 0;
+        }
+
+        public function checkEmail()
+        {
+            if(empty($_POST['email'])) {
+                $this->user_name_err = "Email is required!";
+            } else {
+                $this->user_name = $_POST['email'];
+            }
+
+            if(!empty($this->user_name)) {
+                $query = "SELECT * FROM users WHERE username = '".$this->user_name."'";
+                $result = $this->conn->query($query);
+                if($result->num_rows > 0){
+                    $data = [];
+                    while($row = $result->fetch_assoc()){
+                        $data[] = $row;
+                    }
+                    return $data;
+                }
+            }
+        }
+
+        public function saveNewPassword($id)
+        {
+            if (empty($_POST['password']) || empty($_POST['rePassword'])) {
+                $this->password_err = "Password is required!";
+            } else {
+                if($_POST['password'] != $_POST['rePassword']) {
+                    $this->password_err = "Password ...!";
+                }
+                else $this->password = $_POST['password'];
+            }
+
+            if (!empty($this->password)) {
+                $value = " password='" . $this->password . "'";
+                return $this->update("users", $value, "$this->id = $id");
+            } else return 0;
         }
     }
  ?>

@@ -62,6 +62,7 @@ class Model{
     public function update($table, $value, $id){
         $query = "UPDATE $table SET $value WHERE $id";
         $result = $this->conn->query($query);
+
         if($result){
             return 1;
         }

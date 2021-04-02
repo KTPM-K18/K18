@@ -17,28 +17,28 @@
         <div class="profile">
             <div class="my-acc-header">
                 <h1>Hồ sơ của tôi</h1>
-                <div class="form">
-                    Tên đăng nhập : <!--nhập lúc đăng kí tài khoản-->
+                <form class="form" method="post" action="?task=updateInfo">
+                    <label for="fullname">Họ và tên </label>
+                    <input type="text" name="fullname" class="input" id="fullname" value="<?php echo $data[0]['fullname']; ?>">
                     <br><br>
-                    Tên : <input type="text">
-                    <input type="submit" value="Thay đổi" style="cursor: pointer;">
+                    <label>Email : </label>
+                    <span class="username" style="font-size: 19px; color: #f64749;"><?php echo $data[0]['username']; ?></span>
                     <br><br>
-                    Email :  <!--email đăng kí-->
+                    <label>Giới tính </label>
+                    <input type="radio" name="gender" id="nam" value="Nam" > <label for="nam">Nam</label>
+                    <input type="radio" name="gender" id="nu" value="Nữ" class="gender" > <label for="nu">Nữ</label>
+                    <input type="radio" name="gender" id="khac" value="Khác" class="gender" > <label for="khac">Khác</label>
                     <br><br>
-                    Giới tính :
-                    <input type="radio" name="gender"> Nam
-                    <input type="radio" name="gender"> Nữ
-                    <input type="radio" name="gender"> Khác
+                    <label for="date">Ngày sinh </label>
+                    <input type="date" id="date" class="input" name="date" value="<?php echo $data[0]['birthday']; ?>">
                     <br><br>
-                    Ngày sinh :
-                    <input type="date">
+                    <label for="address">Địa chỉ </label>
+                    <input type="text" name="address" class="input" id="address" value="<?php echo $data[0]['address']; ?>">
                     <br><br>
-                    Địa chỉ :
-                    <input type="text">
-                    <input type="submit" value="Thay đổi" style="cursor: pointer;">
-                    <br><br>
-                    <input type="submit" value="Lưu" style="font-size: 16px; cursor: pointer; background-color: #ccc;">
-                </div>
+                    <div class="btn">
+                        <button type="submit">Lưu</button>
+                    </div>
+                </form>
             </div>
         </div>
 

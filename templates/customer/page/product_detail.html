@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="assets/css/product.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Document</title>
+    <title>Chi tiết sản phẩm</title>
 </head>
 <body>
     <?php include "templates/Customer/partials/header.html";?>
@@ -28,22 +28,22 @@
                     <div class="img-select">
                         <div class="img-item">
                             <a href="assets/img/Product-detail__img/shoe_1.jpg" data-id="1">
-                                
+                                <img src="assets/img/products/<?php echo $value['img']?>" alt="">
                             </a>
                         </div>
                         <div class="img-item">
                             <a href="assets/img/Product-detail__img/shoe_2.jpg" data-id="2">
-                                
+                                <img src="assets/img/products/<?php echo $value['img']?>" alt="">
                             </a>
                         </div>
                         <div class="img-item">
                             <a href="assets/img/Product-detail__img/shoe_3.jpg" data-id="3">
-                                
+                                <img src="assets/img/products/<?php echo $value['img']?>" alt="">
                             </a>
                         </div>
                         <div class="img-item">
                             <a href="assets/img/Product-detail__img/shoe_4.jpg" data-id="4">
-                                
+                                <img src="assets/img/products/<?php echo $value['img']?>" alt="">
                             </a>
                         </div>
                     </div>
@@ -95,15 +95,14 @@
                 </div>
 
                 <!-- Thông tin -->
-                <div class="purchase-info">
-                    <input type="number" min="0" value="1">
-                    <button type="button" class="btn">
+                <form method="post" action="?task=addProduct&idProduct=<?php echo $_REQUEST['id']; ?>" class="purchase-info">
+                    <input type="number" min="0" value="1" name="amount">
+                    <button type="submit" class="btn">
                         Thêm vào giỏ hàng
                         <i class="fas fa-shopping-cart"></i>
                     </button>
-                    <button type="button" class="btn">Mua ngay</button>
-                
-                </div>
+                    <button type="submit" class="btn">Mua ngay</button>
+                </form>
 
                 <div class="social-link">
                     <p>Chia sẻ:</p>
